@@ -1,0 +1,1104 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="http://roots.cx">roots (v5.1.0)</a>
+</h1>
+<h4>simple, flexible, and powerful static site compiler</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.roots">module roots</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">roots.</span>usingDomains</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.roots.roots">
+            function <span class="apidocSignatureSpan"></span>roots
+            <span class="apidocSignatureSpan">(root, opts1)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.roots.EventEmitter">
+            function <span class="apidocSignatureSpan">roots.</span>EventEmitter
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.roots.analytics">
+            function <span class="apidocSignatureSpan">roots.</span>analytics
+            <span class="apidocSignatureSpan">(args)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.roots.init">
+            function <span class="apidocSignatureSpan">roots.</span>init
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.roots.listenerCount">
+            function <span class="apidocSignatureSpan">roots.</span>listenerCount
+            <span class="apidocSignatureSpan">(emitter, type)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.roots.new">
+            function <span class="apidocSignatureSpan">roots.</span>new
+            <span class="apidocSignatureSpan">(opts)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.roots.template.add">
+            function <span class="apidocSignatureSpan">roots.</span>template.add
+            <span class="apidocSignatureSpan">(args)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.roots.template.default">
+            function <span class="apidocSignatureSpan">roots.</span>template.default
+            <span class="apidocSignatureSpan">(args)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.roots.template.list">
+            function <span class="apidocSignatureSpan">roots.</span>template.list
+            <span class="apidocSignatureSpan">(args)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.roots.template.remove">
+            function <span class="apidocSignatureSpan">roots.</span>template.remove
+            <span class="apidocSignatureSpan">(args)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.roots.template.reset">
+            function <span class="apidocSignatureSpan">roots.</span>template.reset
+            <span class="apidocSignatureSpan">(override)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.roots.toString">
+            function <span class="apidocSignatureSpan">roots.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">roots.</span>defaultMaxListeners</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">roots.</span>__super__</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">roots.</span>template</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.roots.analytics">module roots.analytics</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.roots.analytics.analytics">
+            function <span class="apidocSignatureSpan">roots.</span>analytics
+            <span class="apidocSignatureSpan">(args)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.roots.init">module roots.init</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.roots.init.init">
+            function <span class="apidocSignatureSpan">roots.</span>init
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.roots.listenerCount">module roots.listenerCount</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.roots.listenerCount.listenerCount">
+            function <span class="apidocSignatureSpan">roots.</span>listenerCount
+            <span class="apidocSignatureSpan">(emitter, type)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.roots.new">module roots.new</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.roots.new.new">
+            function <span class="apidocSignatureSpan">roots.</span>new
+            <span class="apidocSignatureSpan">(opts)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.roots.template">module roots.template</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.roots.template.add">
+            function <span class="apidocSignatureSpan">roots.template.</span>add
+            <span class="apidocSignatureSpan">(args)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.roots.template.default">
+            function <span class="apidocSignatureSpan">roots.template.</span>default
+            <span class="apidocSignatureSpan">(args)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.roots.template.list">
+            function <span class="apidocSignatureSpan">roots.template.</span>list
+            <span class="apidocSignatureSpan">(args)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.roots.template.remove">
+            function <span class="apidocSignatureSpan">roots.template.</span>remove
+            <span class="apidocSignatureSpan">(args)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.roots.template.reset">
+            function <span class="apidocSignatureSpan">roots.template.</span>reset
+            <span class="apidocSignatureSpan">(override)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.roots.template.add">module roots.template.add</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.roots.template.add.add">
+            function <span class="apidocSignatureSpan">roots.template.</span>add
+            <span class="apidocSignatureSpan">(args)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.roots.template.default">module roots.template.default</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.roots.template.default.default">
+            function <span class="apidocSignatureSpan">roots.template.</span>default
+            <span class="apidocSignatureSpan">(args)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.roots.template.list">module roots.template.list</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.roots.template.list.list">
+            function <span class="apidocSignatureSpan">roots.template.</span>list
+            <span class="apidocSignatureSpan">(args)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.roots.template.remove">module roots.template.remove</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.roots.template.remove.remove">
+            function <span class="apidocSignatureSpan">roots.template.</span>remove
+            <span class="apidocSignatureSpan">(args)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.roots.template.reset">module roots.template.reset</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.roots.template.reset.reset">
+            function <span class="apidocSignatureSpan">roots.template.</span>reset
+            <span class="apidocSignatureSpan">(override)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.roots.toString">module roots.toString</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.roots.toString.toString">
+            function <span class="apidocSignatureSpan">roots.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.roots" id="apidoc.module.roots">module roots</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.roots.roots" id="apidoc.element.roots.roots">
+        function <span class="apidocSignatureSpan"></span>roots
+        <span class="apidocSignatureSpan">(root, opts1)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Roots(root, opts1) {
+  this.root = root;
+  this.opts = opts1 != null ? opts1 : {};
+  this.root = path.resolve(this.root);
+  if (!fs.existsSync(this.root)) {
+    throw new Error("path does not exist");
+  }
+  this.extensions = new Extensions(this);
+  this.config = new Config(this, this.opts);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.roots.EventEmitter" id="apidoc.element.roots.EventEmitter">
+        function <span class="apidocSignatureSpan">roots.</span>EventEmitter
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function EventEmitter() {
+  EventEmitter.init.call(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.roots.analytics" id="apidoc.element.roots.analytics">
+        function <span class="apidocSignatureSpan">roots.</span>analytics
+        <span class="apidocSignatureSpan">(args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">analytics = function (args) {
+  var analytics;
+  analytics = require('./api/analytics');
+  return analytics(args);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.roots.init" id="apidoc.element.roots.init">
+        function <span class="apidocSignatureSpan">roots.</span>init
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">init = function () {
+  this.domain = null;
+  if (EventEmitter.usingDomains) {
+    // if there is an active domain, then attach to it.
+    domain = domain || require('domain');
+    if (domain.active &amp;&amp; !(this instanceof domain.Domain)) {
+      this.domain = domain.active;
+    }
+  }
+
+  if (!this._events || this._events === Object.getPrototypeOf(this)._events) {
+    this._events = new EventHandlers();
+    this._eventsCount = 0;
+  }
+
+  this._maxListeners = this._maxListeners || undefined;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.roots.listenerCount" id="apidoc.element.roots.listenerCount">
+        function <span class="apidocSignatureSpan">roots.</span>listenerCount
+        <span class="apidocSignatureSpan">(emitter, type)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">listenerCount = function (emitter, type) {
+  if (typeof emitter.listenerCount === 'function') {
+    return emitter.listenerCount(type);
+  } else {
+    return listenerCount.call(emitter, type);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.roots.new" id="apidoc.element.roots.new">
+        function <span class="apidocSignatureSpan">roots.</span>new
+        <span class="apidocSignatureSpan">(opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">new = function (opts) {
+  var New;
+  New = require('./api/new');
+  return (new New(this)).exec(opts);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.roots.template.add" id="apidoc.element.roots.template.add">
+        function <span class="apidocSignatureSpan">roots.</span>template.add
+        <span class="apidocSignatureSpan">(args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">template.add = function (args) {
+  __track('api', {
+    name: 'template-add',
+    template: args.name
+  });
+  return sprout.add(args.name, args.uri, _.omit(args, 'name', 'uri')).then(function() {
+    return "template '" + args.name + "' added";
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.roots.template.default" id="apidoc.element.roots.template.default">
+        function <span class="apidocSignatureSpan">roots.</span>template.default
+        <span class="apidocSignatureSpan">(args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">template.default = function (args) {
+  var config;
+  if (args == null) {
+    args = {};
+  }
+  __track('api', {
+    name: 'template-default',
+    template: args.name
+  });
+  if (!args.name) {
+    return W.reject(new Error('please provide a template name'));
+  }
+  if (!_.includes(_.keys(sprout.templates), args.name)) {
+    return W.reject(new Error("you do not have this template installed"));
+  }
+  config = global_config();
+  config.set('default_template', args.name);
+  return W.resolve("default template set to '" + args.name + "'");
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.roots.template.list" id="apidoc.element.roots.template.list">
+        function <span class="apidocSignatureSpan">roots.</span>template.list
+        <span class="apidocSignatureSpan">(args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">template.list = function (args) {
+  var templates;
+  if (args == null) {
+    args = {};
+  }
+  __track('api', {
+    name: 'template-list'
+  });
+  templates = _.keys(sprout.templates);
+  if (args.pretty) {
+    return "\n- " + (templates.join('\n- ')) + "\n";
+  } else {
+    return templates;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.roots.template.remove" id="apidoc.element.roots.template.remove">
+        function <span class="apidocSignatureSpan">roots.</span>template.remove
+        <span class="apidocSignatureSpan">(args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">template.remove = function (args) {
+  if (args == null) {
+    args = {};
+  }
+  __track('api', {
+    name: 'template-remove',
+    template: args.name
+  });
+  if (!args.name) {
+    return W.reject(new Error('please provide a template name to remove'));
+  }
+  return sprout.remove(args.name).then(function() {
+    return "template '" + args.name + "' removed";
+  })["catch"](function(err) {
+    return W.reject(err);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.roots.template.reset" id="apidoc.element.roots.template.reset">
+        function <span class="apidocSignatureSpan">roots.</span>template.reset
+        <span class="apidocSignatureSpan">(override)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">template.reset = function (override) {
+  var deferred;
+  __track('api', {
+    name: 'template-reset'
+  });
+  deferred = W.defer();
+  if (override) {
+    remove_roots_config(deferred);
+  } else {
+    process.stdout.write('are you sure? (y/n) '.yellow);
+    process.stdin.resume();
+    process.stdin.setEncoding('utf8');
+    process.stdin.on('data', function(txt) {
+      process.stdin.pause();
+      txt = txt.trim();
+      if (txt === 'y' || txt === 'Y') {
+        return remove_roots_config(deferred);
+      }
+      return deferred.reject('reset cancelled');
+    });
+  }
+  return deferred.promise;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.roots.toString" id="apidoc.element.roots.toString">
+        function <span class="apidocSignatureSpan">roots.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toString = function () {
+    return text;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.roots.analytics" id="apidoc.module.roots.analytics">module roots.analytics</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.roots.analytics.analytics" id="apidoc.element.roots.analytics.analytics">
+        function <span class="apidocSignatureSpan">roots.</span>analytics
+        <span class="apidocSignatureSpan">(args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">analytics = function (args) {
+  var analytics;
+  analytics = require('./api/analytics');
+  return analytics(args);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.roots.init" id="apidoc.module.roots.init">module roots.init</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.roots.init.init" id="apidoc.element.roots.init.init">
+        function <span class="apidocSignatureSpan">roots.</span>init
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">init = function () {
+  this.domain = null;
+  if (EventEmitter.usingDomains) {
+    // if there is an active domain, then attach to it.
+    domain = domain || require('domain');
+    if (domain.active &amp;&amp; !(this instanceof domain.Domain)) {
+      this.domain = domain.active;
+    }
+  }
+
+  if (!this._events || this._events === Object.getPrototypeOf(this)._events) {
+    this._events = new EventHandlers();
+    this._eventsCount = 0;
+  }
+
+  this._maxListeners = this._maxListeners || undefined;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.roots.listenerCount" id="apidoc.module.roots.listenerCount">module roots.listenerCount</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.roots.listenerCount.listenerCount" id="apidoc.element.roots.listenerCount.listenerCount">
+        function <span class="apidocSignatureSpan">roots.</span>listenerCount
+        <span class="apidocSignatureSpan">(emitter, type)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">listenerCount = function (emitter, type) {
+  if (typeof emitter.listenerCount === 'function') {
+    return emitter.listenerCount(type);
+  } else {
+    return listenerCount.call(emitter, type);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.roots.new" id="apidoc.module.roots.new">module roots.new</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.roots.new.new" id="apidoc.element.roots.new.new">
+        function <span class="apidocSignatureSpan">roots.</span>new
+        <span class="apidocSignatureSpan">(opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">new = function (opts) {
+  var New;
+  New = require('./api/new');
+  return (new New(this)).exec(opts);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.roots.template" id="apidoc.module.roots.template">module roots.template</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.roots.template.add" id="apidoc.element.roots.template.add">
+        function <span class="apidocSignatureSpan">roots.template.</span>add
+        <span class="apidocSignatureSpan">(args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">add = function (args) {
+  __track('api', {
+    name: 'template-add',
+    template: args.name
+  });
+  return sprout.add(args.name, args.uri, _.omit(args, 'name', 'uri')).then(function() {
+    return "template '" + args.name + "' added";
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.roots.template.default" id="apidoc.element.roots.template.default">
+        function <span class="apidocSignatureSpan">roots.template.</span>default
+        <span class="apidocSignatureSpan">(args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">default = function (args) {
+  var config;
+  if (args == null) {
+    args = {};
+  }
+  __track('api', {
+    name: 'template-default',
+    template: args.name
+  });
+  if (!args.name) {
+    return W.reject(new Error('please provide a template name'));
+  }
+  if (!_.includes(_.keys(sprout.templates), args.name)) {
+    return W.reject(new Error("you do not have this template installed"));
+  }
+  config = global_config();
+  config.set('default_template', args.name);
+  return W.resolve("default template set to '" + args.name + "'");
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.roots.template.list" id="apidoc.element.roots.template.list">
+        function <span class="apidocSignatureSpan">roots.template.</span>list
+        <span class="apidocSignatureSpan">(args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">list = function (args) {
+  var templates;
+  if (args == null) {
+    args = {};
+  }
+  __track('api', {
+    name: 'template-list'
+  });
+  templates = _.keys(sprout.templates);
+  if (args.pretty) {
+    return "\n- " + (templates.join('\n- ')) + "\n";
+  } else {
+    return templates;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.roots.template.remove" id="apidoc.element.roots.template.remove">
+        function <span class="apidocSignatureSpan">roots.template.</span>remove
+        <span class="apidocSignatureSpan">(args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">remove = function (args) {
+  if (args == null) {
+    args = {};
+  }
+  __track('api', {
+    name: 'template-remove',
+    template: args.name
+  });
+  if (!args.name) {
+    return W.reject(new Error('please provide a template name to remove'));
+  }
+  return sprout.remove(args.name).then(function() {
+    return "template '" + args.name + "' removed";
+  })["catch"](function(err) {
+    return W.reject(err);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.roots.template.reset" id="apidoc.element.roots.template.reset">
+        function <span class="apidocSignatureSpan">roots.template.</span>reset
+        <span class="apidocSignatureSpan">(override)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">reset = function (override) {
+  var deferred;
+  __track('api', {
+    name: 'template-reset'
+  });
+  deferred = W.defer();
+  if (override) {
+    remove_roots_config(deferred);
+  } else {
+    process.stdout.write('are you sure? (y/n) '.yellow);
+    process.stdin.resume();
+    process.stdin.setEncoding('utf8');
+    process.stdin.on('data', function(txt) {
+      process.stdin.pause();
+      txt = txt.trim();
+      if (txt === 'y' || txt === 'Y') {
+        return remove_roots_config(deferred);
+      }
+      return deferred.reject('reset cancelled');
+    });
+  }
+  return deferred.promise;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.roots.template.add" id="apidoc.module.roots.template.add">module roots.template.add</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.roots.template.add.add" id="apidoc.element.roots.template.add.add">
+        function <span class="apidocSignatureSpan">roots.template.</span>add
+        <span class="apidocSignatureSpan">(args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">add = function (args) {
+  __track('api', {
+    name: 'template-add',
+    template: args.name
+  });
+  return sprout.add(args.name, args.uri, _.omit(args, 'name', 'uri')).then(function() {
+    return "template '" + args.name + "' added";
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.roots.template.default" id="apidoc.module.roots.template.default">module roots.template.default</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.roots.template.default.default" id="apidoc.element.roots.template.default.default">
+        function <span class="apidocSignatureSpan">roots.template.</span>default
+        <span class="apidocSignatureSpan">(args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">default = function (args) {
+  var config;
+  if (args == null) {
+    args = {};
+  }
+  __track('api', {
+    name: 'template-default',
+    template: args.name
+  });
+  if (!args.name) {
+    return W.reject(new Error('please provide a template name'));
+  }
+  if (!_.includes(_.keys(sprout.templates), args.name)) {
+    return W.reject(new Error("you do not have this template installed"));
+  }
+  config = global_config();
+  config.set('default_template', args.name);
+  return W.resolve("default template set to '" + args.name + "'");
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.roots.template.list" id="apidoc.module.roots.template.list">module roots.template.list</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.roots.template.list.list" id="apidoc.element.roots.template.list.list">
+        function <span class="apidocSignatureSpan">roots.template.</span>list
+        <span class="apidocSignatureSpan">(args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">list = function (args) {
+  var templates;
+  if (args == null) {
+    args = {};
+  }
+  __track('api', {
+    name: 'template-list'
+  });
+  templates = _.keys(sprout.templates);
+  if (args.pretty) {
+    return "\n- " + (templates.join('\n- ')) + "\n";
+  } else {
+    return templates;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.roots.template.remove" id="apidoc.module.roots.template.remove">module roots.template.remove</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.roots.template.remove.remove" id="apidoc.element.roots.template.remove.remove">
+        function <span class="apidocSignatureSpan">roots.template.</span>remove
+        <span class="apidocSignatureSpan">(args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">remove = function (args) {
+  if (args == null) {
+    args = {};
+  }
+  __track('api', {
+    name: 'template-remove',
+    template: args.name
+  });
+  if (!args.name) {
+    return W.reject(new Error('please provide a template name to remove'));
+  }
+  return sprout.remove(args.name).then(function() {
+    return "template '" + args.name + "' removed";
+  })["catch"](function(err) {
+    return W.reject(err);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.roots.template.reset" id="apidoc.module.roots.template.reset">module roots.template.reset</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.roots.template.reset.reset" id="apidoc.element.roots.template.reset.reset">
+        function <span class="apidocSignatureSpan">roots.template.</span>reset
+        <span class="apidocSignatureSpan">(override)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">reset = function (override) {
+  var deferred;
+  __track('api', {
+    name: 'template-reset'
+  });
+  deferred = W.defer();
+  if (override) {
+    remove_roots_config(deferred);
+  } else {
+    process.stdout.write('are you sure? (y/n) '.yellow);
+    process.stdin.resume();
+    process.stdin.setEncoding('utf8');
+    process.stdin.on('data', function(txt) {
+      process.stdin.pause();
+      txt = txt.trim();
+      if (txt === 'y' || txt === 'Y') {
+        return remove_roots_config(deferred);
+      }
+      return deferred.reject('reset cancelled');
+    });
+  }
+  return deferred.promise;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.roots.toString" id="apidoc.module.roots.toString">module roots.toString</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.roots.toString.toString" id="apidoc.element.roots.toString.toString">
+        function <span class="apidocSignatureSpan">roots.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toString() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
