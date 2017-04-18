@@ -1,4 +1,7 @@
-# api documentation for  [roots (v5.1.0)](http://roots.cx)  [![npm package](https://img.shields.io/npm/v/npmdoc-roots.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-roots) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-roots.svg)](https://travis-ci.org/npmdoc/node-npmdoc-roots)
+# npmdoc-roots
+
+#### api documentation for  [roots (v5.1.0)](http://roots.cx)  [![npm package](https://img.shields.io/npm/v/npmdoc-roots.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-roots) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-roots.svg)](https://travis-ci.org/npmdoc/node-npmdoc-roots)
+
 #### simple, flexible, and powerful static site compiler
 
 [![NPM](https://nodei.co/npm/roots.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/roots)
