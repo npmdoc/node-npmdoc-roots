@@ -1,5 +1,5 @@
-<svg height="19614" width="720" xmlns="http://www.w3.org/2000/svg">
-<rect height="19614" fill="#555" width="720"></rect>
+<svg height="19630" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="19630" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
 <tspan x="10" y="26">91 megabytes installed</tspan>
 <tspan x="10" y="42"></tspan>
@@ -25,7 +25,7 @@
 <tspan x="10" y="362">  │ ├── lodash.partialright@4.2.1 </tspan>
 <tspan x="10" y="378">  │ ├── lodash.pick@4.4.0 </tspan>
 <tspan x="10" y="394">  │ ├── lodash.uniq@4.5.0 </tspan>
-<tspan x="10" y="410">  │ ├─┬ resolve@1.3.2 </tspan>
+<tspan x="10" y="410">  │ ├─┬ resolve@1.3.3 </tspan>
 <tspan x="10" y="426">  │ │ └── path-parse@1.0.5 </tspan>
 <tspan x="10" y="442">  │ ├── semver@5.3.0 </tspan>
 <tspan x="10" y="458">  │ ├─┬ uglify-js@2.8.22 </tspan>
@@ -36,7 +36,7 @@
 <tspan x="10" y="538">  │ │   ├─┬ cliui@2.1.0 </tspan>
 <tspan x="10" y="554">  │ │   │ ├─┬ center-align@0.1.3 </tspan>
 <tspan x="10" y="570">  │ │   │ │ ├─┬ align-text@0.1.4 </tspan>
-<tspan x="10" y="586">  │ │   │ │ │ ├── kind-of@3.1.0  deduped</tspan>
+<tspan x="10" y="586">  │ │   │ │ │ ├── kind-of@3.2.0  deduped</tspan>
 <tspan x="10" y="602">  │ │   │ │ │ ├── longest@1.0.1 </tspan>
 <tspan x="10" y="618">  │ │   │ │ │ └── repeat-string@1.6.1  deduped</tspan>
 <tspan x="10" y="634">  │ │   │ │ └── lazy-cache@1.0.4 </tspan>
@@ -330,7 +330,7 @@
 <tspan x="10" y="5242">  │   │   │ ├── pinkie-promise@2.0.1  deduped</tspan>
 <tspan x="10" y="5258">  │   │   │ └─┬ strip-bom@2.0.0 </tspan>
 <tspan x="10" y="5274">  │   │   │   └── is-utf8@0.2.1 </tspan>
-<tspan x="10" y="5290">  │   │   ├─┬ normalize-package-data@2.3.6 </tspan>
+<tspan x="10" y="5290">  │   │   ├─┬ normalize-package-data@2.3.8 </tspan>
 <tspan x="10" y="5306">  │   │   │ ├── hosted-git-info@2.4.2 </tspan>
 <tspan x="10" y="5322">  │   │   │ ├─┬ is-builtin-module@1.0.0 </tspan>
 <tspan x="10" y="5338">  │   │   │ │ └── builtin-modules@1.1.1 </tspan>
@@ -456,7 +456,7 @@
 <tspan x="10" y="7258">  │   │ ├── os-tmpdir@1.0.2  deduped</tspan>
 <tspan x="10" y="7274">  │   │ ├── osenv@0.1.4  deduped</tspan>
 <tspan x="10" y="7290">  │   │ ├── uuid@2.0.3  deduped</tspan>
-<tspan x="10" y="7306">  │   │ ├── write-file-atomic@1.3.1  deduped</tspan>
+<tspan x="10" y="7306">  │   │ ├── write-file-atomic@1.3.3  deduped</tspan>
 <tspan x="10" y="7322">  │   │ └── xdg-basedir@2.0.0  deduped</tspan>
 <tspan x="10" y="7338">  │   ├── is-npm@1.0.0  deduped</tspan>
 <tspan x="10" y="7354">  │   ├─┬ latest-version@1.0.1 </tspan>
@@ -511,7 +511,7 @@
 <tspan x="10" y="8138">  │ ├── os-tmpdir@1.0.2 </tspan>
 <tspan x="10" y="8154">  │ ├── osenv@0.1.4  deduped</tspan>
 <tspan x="10" y="8170">  │ ├── uuid@2.0.3 </tspan>
-<tspan x="10" y="8186">  │ ├─┬ write-file-atomic@1.3.1 </tspan>
+<tspan x="10" y="8186">  │ ├─┬ write-file-atomic@1.3.3 </tspan>
 <tspan x="10" y="8202">  │ │ ├── graceful-fs@4.1.11  deduped</tspan>
 <tspan x="10" y="8218">  │ │ ├── imurmurhash@0.1.4 </tspan>
 <tspan x="10" y="8234">  │ │ └── slide@1.1.6 </tspan>
@@ -582,12 +582,12 @@
 <tspan x="10" y="9274">  │ │ ├─┬ expand-range@1.8.2 </tspan>
 <tspan x="10" y="9290">  │ │ │ └─┬ fill-range@2.2.3 </tspan>
 <tspan x="10" y="9306">  │ │ │   ├─┬ is-number@2.1.0 </tspan>
-<tspan x="10" y="9322">  │ │ │   │ └── kind-of@3.1.0  deduped</tspan>
+<tspan x="10" y="9322">  │ │ │   │ └── kind-of@3.2.0  deduped</tspan>
 <tspan x="10" y="9338">  │ │ │   ├─┬ isobject@2.1.0 </tspan>
 <tspan x="10" y="9354">  │ │ │   │ └── isarray@1.0.0  deduped</tspan>
 <tspan x="10" y="9370">  │ │ │   ├─┬ randomatic@1.1.6 </tspan>
 <tspan x="10" y="9386">  │ │ │   │ ├── is-number@2.1.0  deduped</tspan>
-<tspan x="10" y="9402">  │ │ │   │ └── kind-of@3.1.0  deduped</tspan>
+<tspan x="10" y="9402">  │ │ │   │ └── kind-of@3.2.0  deduped</tspan>
 <tspan x="10" y="9418">  │ │ │   ├── repeat-element@1.1.2  deduped</tspan>
 <tspan x="10" y="9434">  │ │ │   └── repeat-string@1.6.1 </tspan>
 <tspan x="10" y="9450">  │ │ ├── preserve@0.2.0 </tspan>
@@ -599,7 +599,7 @@
 <tspan x="10" y="9546">  │ ├── filename-regex@2.0.0 </tspan>
 <tspan x="10" y="9562">  │ ├── is-extglob@1.0.0 </tspan>
 <tspan x="10" y="9578">  │ ├── is-glob@2.0.1  deduped</tspan>
-<tspan x="10" y="9594">  │ ├─┬ kind-of@3.1.0 </tspan>
+<tspan x="10" y="9594">  │ ├─┬ kind-of@3.2.0 </tspan>
 <tspan x="10" y="9610">  │ │ └── is-buffer@1.1.5 </tspan>
 <tspan x="10" y="9626">  │ ├─┬ normalize-path@2.1.1 </tspan>
 <tspan x="10" y="9642">  │ │ └── remove-trailing-separator@1.0.1  deduped</tspan>
@@ -1198,32 +1198,33 @@
 <tspan x="10" y="19130">  │ │   │ ├── unzip-response@1.0.2 </tspan>
 <tspan x="10" y="19146">  │ │   │ └─┬ url-parse-lax@1.0.0 </tspan>
 <tspan x="10" y="19162">  │ │   │   └── prepend-http@1.0.4  deduped</tspan>
-<tspan x="10" y="19178">  │ │   ├─┬ registry-auth-token@3.1.2 </tspan>
-<tspan x="10" y="19194">  │ │   │ └─┬ rc@1.2.1 </tspan>
-<tspan x="10" y="19210">  │ │   │   ├── deep-extend@0.4.1 </tspan>
-<tspan x="10" y="19226">  │ │   │   ├── ini@1.3.4 </tspan>
-<tspan x="10" y="19242">  │ │   │   ├── minimist@1.2.0  deduped</tspan>
-<tspan x="10" y="19258">  │ │   │   └── strip-json-comments@2.0.1 </tspan>
-<tspan x="10" y="19274">  │ │   ├─┬ registry-url@3.1.0 </tspan>
-<tspan x="10" y="19290">  │ │   │ └── rc@1.2.1  deduped</tspan>
-<tspan x="10" y="19306">  │ │   └── semver@5.3.0  deduped</tspan>
-<tspan x="10" y="19322">  │ ├── lazy-req@1.1.0 </tspan>
-<tspan x="10" y="19338">  │ ├─┬ semver-diff@2.1.0 </tspan>
-<tspan x="10" y="19354">  │ │ └── semver@5.3.0  deduped</tspan>
-<tspan x="10" y="19370">  │ └── xdg-basedir@2.0.0  deduped</tspan>
-<tspan x="10" y="19386">  ├─┬ vinyl@2.0.1 </tspan>
-<tspan x="10" y="19402">  │ ├── clone@1.0.2 </tspan>
-<tspan x="10" y="19418">  │ ├── clone-buffer@1.0.0 </tspan>
-<tspan x="10" y="19434">  │ ├── clone-stats@1.0.0 </tspan>
-<tspan x="10" y="19450">  │ ├─┬ cloneable-readable@1.0.0 </tspan>
-<tspan x="10" y="19466">  │ │ ├── inherits@2.0.3  deduped</tspan>
-<tspan x="10" y="19482">  │ │ ├── process-nextick-args@1.0.7  deduped</tspan>
-<tspan x="10" y="19498">  │ │ └─┬ through2@2.0.3 </tspan>
-<tspan x="10" y="19514">  │ │   ├── readable-stream@2.2.9  deduped</tspan>
-<tspan x="10" y="19530">  │ │   └── xtend@4.0.1 </tspan>
-<tspan x="10" y="19546">  │ ├── is-stream@1.1.0 </tspan>
-<tspan x="10" y="19562">  │ ├── remove-trailing-separator@1.0.1 </tspan>
-<tspan x="10" y="19578">  │ └── replace-ext@1.0.0 </tspan>
-<tspan x="10" y="19594">  └── when@3.7.8</tspan>
+<tspan x="10" y="19178">  │ │   ├─┬ registry-auth-token@3.3.0 </tspan>
+<tspan x="10" y="19194">  │ │   │ ├─┬ rc@1.2.1 </tspan>
+<tspan x="10" y="19210">  │ │   │ │ ├── deep-extend@0.4.1 </tspan>
+<tspan x="10" y="19226">  │ │   │ │ ├── ini@1.3.4 </tspan>
+<tspan x="10" y="19242">  │ │   │ │ ├── minimist@1.2.0  deduped</tspan>
+<tspan x="10" y="19258">  │ │   │ │ └── strip-json-comments@2.0.1 </tspan>
+<tspan x="10" y="19274">  │ │   │ └── safe-buffer@5.0.1 </tspan>
+<tspan x="10" y="19290">  │ │   ├─┬ registry-url@3.1.0 </tspan>
+<tspan x="10" y="19306">  │ │   │ └── rc@1.2.1  deduped</tspan>
+<tspan x="10" y="19322">  │ │   └── semver@5.3.0  deduped</tspan>
+<tspan x="10" y="19338">  │ ├── lazy-req@1.1.0 </tspan>
+<tspan x="10" y="19354">  │ ├─┬ semver-diff@2.1.0 </tspan>
+<tspan x="10" y="19370">  │ │ └── semver@5.3.0  deduped</tspan>
+<tspan x="10" y="19386">  │ └── xdg-basedir@2.0.0  deduped</tspan>
+<tspan x="10" y="19402">  ├─┬ vinyl@2.0.1 </tspan>
+<tspan x="10" y="19418">  │ ├── clone@1.0.2 </tspan>
+<tspan x="10" y="19434">  │ ├── clone-buffer@1.0.0 </tspan>
+<tspan x="10" y="19450">  │ ├── clone-stats@1.0.0 </tspan>
+<tspan x="10" y="19466">  │ ├─┬ cloneable-readable@1.0.0 </tspan>
+<tspan x="10" y="19482">  │ │ ├── inherits@2.0.3  deduped</tspan>
+<tspan x="10" y="19498">  │ │ ├── process-nextick-args@1.0.7  deduped</tspan>
+<tspan x="10" y="19514">  │ │ └─┬ through2@2.0.3 </tspan>
+<tspan x="10" y="19530">  │ │   ├── readable-stream@2.2.9  deduped</tspan>
+<tspan x="10" y="19546">  │ │   └── xtend@4.0.1 </tspan>
+<tspan x="10" y="19562">  │ ├── is-stream@1.1.0 </tspan>
+<tspan x="10" y="19578">  │ ├── remove-trailing-separator@1.0.1 </tspan>
+<tspan x="10" y="19594">  │ └── replace-ext@1.0.0 </tspan>
+<tspan x="10" y="19610">  └── when@3.7.8</tspan>
 </text>
 </svg>
